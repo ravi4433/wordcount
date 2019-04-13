@@ -1,0 +1,19 @@
+<h1>Counted</h1>
+
+<a href="{% url 'homepage' %}">Back to HomePage</a>
+
+<h1>Your entered text:</h1>
+{{ fulltext }}
+<br/>
+<h1>World Length:</h1>
+Total Words : {{ length }}
+
+<br/><br/>
+
+{% for word,value in data_dictionary %}
+
+{{ word }} : {{ value  }}</br>
+
+{% endfor  %}
+
+<!--  {{ data_dictionary }}  -->
